@@ -21,15 +21,15 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQL9Dialect
-    datasource:
-      url: jdbc:postgresql://localhost:5432/postgres?currentSchema=public&binaryTransfer=true&reWriteBatchedInserts=true
-      username: postgres
-      password: '{cipher}c71993b0fa35bb5b3b416390a86655be4236554c292c6fab45c412bd9b26a22d'
-      driver-class-name: org.postgresql.Driver
-      platform: postgres
-      schema: classpath:init-schema.sql
-      data: classpath:init-data.sql
-      initialization-mode: always
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres?currentSchema=public&binaryTransfer=true&reWriteBatchedInserts=true
+    username: postgres
+    password: '{cipher}9d5ef7690de0463e5b5f9f83fa23ee9b593e168c262f251f4649b1c66c36ad6e'
+    driver-class-name: org.postgresql.Driver
+    platform: postgres
+    schema: classpath:init-schema.sql
+    data: classpath:init-data.sql
+    initialization-mode: always
 
 elastic-query-config:
   text-field: text
